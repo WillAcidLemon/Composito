@@ -1,0 +1,145 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #F0F8F0;
+    color: #333;
+}
+ 
+h1, h2 {
+    color: #76BF82;
+    font-weight: bold;
+}
+ 
+a {
+    color: #76BF82;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: #C09B6C;
+}
+ 
+/* Barra de navegación */
+.navbar {
+    background-color: #6CA1C0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.navbar ul li {
+    margin: 0 15px;
+}
+ 
+.navbar ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ 
+/* Secciones */
+section {
+    margin-top: 80px;
+    padding: 2rem;
+}
+ 
+#inicio {
+    background-color: #6CA1C0;
+    color: white;
+    text-align: center;
+}
+ 
+#ventas {
+    background-color: #F9F9F9;
+}
+ 
+#acerca-de {
+    background-color: #76BF82;
+    color: white;
+}
+ 
+#reseñas {
+    background-color: #C09B6C;
+    color: rgb(90, 187, 142);
+}
+ 
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+ 
+/* Pie de página */
+footer {
+    background-color: #76BF82;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+ 
+footer .social-media a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+}
+ 
+footer .social-media a:hover {
+    color: #C09B6C;
+}
+ 
+/* Carrusel de reseñas */
+.carousel {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #ffffff88;
+    border-radius: 10px;
+}
+
+.carousel p {
+    padding: 12px 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: normal;   /* ← Esto permite que el texto no se corte */
+    min-width: 250px;      /* Reseñas más amplias */
+    max-width: 350px;
+}
+
+
